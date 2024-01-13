@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rick y Morty - Episodios</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="_CSS/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="main"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mainLogo">
+                    <img src="_assets/Rick_and_Morty_logo.png" class="img-fluid" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="button-container">
+                        <a href="index.html" class="btn nav-button">Personajes</a>
+                        <a href="locations.html" class="btn nav-button">Locaciones</a>
+                        <a href="episodes.html" class="btn nav-button active">Episodios</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h1>Episodios de Rick y Morty</h1>
+                    <input type="text" id="searchInput" class="form-control mb-4" placeholder="Buscar episodios..." />
+
+                    <div id="episodes" class="row"></div>
+
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#" id="prevPage">Anterior</a></li>
+                            <li class="page-item"><a class="page-link" href="#" id="nextPage">Siguiente</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.10/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="_JS/episodeScript.js"></script>
+    </body>
+</html>
